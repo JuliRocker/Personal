@@ -23,17 +23,11 @@ public class GenerateInfoFiles {
         System.out.println("Generando archivo de vendedores...");
         createSalesManInfoFile(NOMBRE.length);
 
-				System.out.println("Generando archivo de ventas del primer vendedor...");
-				createSalesMenFile(3, NOMBRE[0], salesManIds[0]);
-
-				System.out.println("Generando archivo de ventas del segundo vendedor...");
-				createSalesMenFile(4, NOMBRE[1], salesManIds[1]);
-
-				System.out.println("Generando archivo de ventas del tercer vendedor...");
-				createSalesMenFile(2, NOMBRE[2], salesManIds[2]);
-
-				System.out.println("Generando archivo de ventas del cuarto vendedor...");
-				createSalesMenFile(5, NOMBRE[3], salesManIds[3]);
+				for (int i = 0; i < NOMBRE.length; i++) {
+					int randomSalesCount = 2 + (int) (Math.random() * (PRODUCTOS.length - 1)); // ventas entre 2 y PRODUCTOS.length
+					System.out.println("Generando archivo de ventas del vendedor " + NOMBRE[i] + "...");
+					createSalesMenFile(randomSalesCount, NOMBRE[i], salesManIds[i]);
+				}
     }
 
     /**
