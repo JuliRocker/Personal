@@ -128,7 +128,7 @@ public class GenerateInfoFiles {
      */
     public static void createSalesMenFile(int randomSalesCount, String name, long id) {
 				// creamos el archivo de ventas del vendedor
-				String fileName = "ventas_" + id + ".csv";
+				String fileName = "vendedor_" + id + ".csv";
 				
 				//formato de archivo a generar es IDProducto1;CantidadProducto1Vendido; sacando los productos random del array de productos
 				try {
