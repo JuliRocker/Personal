@@ -1,51 +1,10 @@
 package cfpProyecto;
 
-<<<<<<< HEAD
-import java.io.PrintWriter;
-import java.util.Random;
-
-/**Clase encargada de generar los archivos de prueba (productos, vendedores, ventas).
- * cada método crea un archivo CSV con información pseudoaleatoria*/
-
-public class GenerateInfoFiles {
-	
-	//Arrays donde se almacenan los valores que llevará el documento
-	
-	private static final String [] nombres = {"Julián","Yessica","Hector","Juan","Christian"};
-	private static final String [] apellidos = {"Sierra","Díaz","Vargas","Valenzuela"};
-	private static final String [] tiposDoc = {"C.C","C.E","T.I"};
-	private static final String [] productos = {"Laptop","Mouse","Monitor","Teclado","Impresora"};
-	private static final double [] precios = {2500000,50000,780000,95000,650000};
-	
-	
-	/** Genera un archivo con información de ventas de un vendedor.
-	 * 
-	 * 
-	 * @param randomSalesCount
-	 * @param name
-	 * @param id
-	 */
-	
-	public static void createSalesMenFile(int salesmanCount) throws Exception {
-		
-		
-        }
-		
-	/**Genera un archico CSV con información de productos
-	 * cada producto tiene un ID, un nombre y un precio.
-	 * @param productsCount cantidad de productos a generar
-	 */
-	public static void createProductsFile (int productsCount) {
-		try {
-	        // Creamos el archivo productos.csv en la carpeta del proyecto
-	        java.io.PrintWriter writer = new java.io.PrintWriter("productos.csv", "UTF-8");
-=======
 /**
  * Clase encargada de generar los archivos de prueba (productos, vendedores,
  * ventas). cada método crea un archivo CSV con información pseudoaleatoria
  */
 public class GenerateInfoFiles {
->>>>>>> a172720d7d40ae1930fef23eec93fd18a9296e41
 
     //Arrays donde se almacenan los valores que llevará el documento
     private static final String[] NOMBRE = {"Julián", "Yessica", "Hector", "Juan", "Christian"};
