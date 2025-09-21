@@ -1,5 +1,8 @@
 package cfpProyecto;
 
+import java.io.PrintWriter;
+import java.util.Random;
+
 /**Clase encargada de generar los archivos de prueba (productos, vendedores, ventas).
  * cada método crea un archivo CSV con información pseudoaleatoria*/
 
@@ -22,9 +25,11 @@ public class GenerateInfoFiles {
 	 * @param id
 	 */
 	
-	public static void createSalesMenFile(int randomSalesCount, String name, long id) {
+	public static void createSalesMenFile(int salesmanCount) throws Exception {
 		
-	}
+		
+        }
+		
 	/**Genera un archico CSV con información de productos
 	 * cada producto tiene un ID, un nombre y un precio.
 	 * @param productsCount cantidad de productos a generar
